@@ -45,9 +45,9 @@ tasks.themeFile = new Task('index', async function() {
 
     for (const {name: themeName} of themes) {
         if (themeFile[themeName]) {
-            themeInfo.push(themeFile[themeName])
+            themeInfo.push({id: themeName, ...themeFile[themeName]})
         } else {
-            themeInfo.push({name: themeName, share: false})
+            themeInfo.push({id: themeName, share: false})
         }
     }
 
