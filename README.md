@@ -190,3 +190,12 @@ The response is:
 ```
 
 :tada: Congratulations! You just generated a dynamic theme.
+
+## FAQ
+Yarn build breaks on node-sass on MacOS
+
+You need to have the xcode-cli installed
+
+```
+xcode-select --install
+```
