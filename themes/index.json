@@ -34,6 +34,11 @@
         "share": false,
         "url": "https://molgenis88.gcc.rug.nl/"
     },
+    "c6": {
+        "name": "Chromosome 6",
+        "share": false,
+        "url": "https://questionnaire.chromosome6.org/"
+    },
     "molgenis-blue": {
         "name": "Molgenis Default - Blue",
         "share": true,
