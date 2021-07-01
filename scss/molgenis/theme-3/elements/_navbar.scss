@@ -110,6 +110,7 @@
             border: 1px solid $mg-border-color;
 
             li a {
+                color: $mg-color-secondary; // Fixes white text on white background in mobile submenu
                 line-height: $mg-navbar-height;
                 padding-bottom: 0;
                 padding-top: 0;
