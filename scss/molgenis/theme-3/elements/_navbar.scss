@@ -69,9 +69,9 @@
     }
 
     // The mobile menu
-    @media (max-width: #{$grid-float-breakpoint}) {
+    @media (max-width: #{$grid-float-breakpoint - 1px }) {
         background: $mg-navbar-bg;
-
+        
         .navbar-toggle {
             margin-right: $mg-spacer / 2;
         }
