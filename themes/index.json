@@ -39,6 +39,11 @@
         "share": false,
         "url": "https://questionnaire.chromosome6.org/"
     },
+    "palga": {
+        "name": "Palga",
+        "share": false,
+        "url": "https://palga-acc.gcc.rug.nl/"
+    },
     "molgenis-blue": {
         "name": "Molgenis Default - Blue",
         "share": true,
