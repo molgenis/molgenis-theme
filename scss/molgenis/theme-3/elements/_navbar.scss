@@ -69,7 +69,7 @@
     }
 
     // The mobile menu
-    @media (max-width: #{$grid-float-breakpoint - 1px }) { // -1px fixes the menu being broken at 1127px
+    @media (max-width: #{$grid-float-breakpoint - 1px }) { // -1px fixes the menu being broken at breakpoint
         background: $mg-navbar-bg;
 
         .navbar-toggle {
