@@ -127,3 +127,9 @@ body {
 body > nav > header {
     background-color: $body-bg;
 }
+
+// Fix: make scrolling in mobile menu posible
+.navbar-fixed-top {
+    max-height: 100vh;
+    overflow: auto;
+}

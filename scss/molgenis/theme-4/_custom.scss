@@ -78,3 +78,9 @@
 .custom-select {
     -webkit-appearance: none;
 }
+
+// Fix: make scrolling in mobile menu posible
+.fixed-top {
+    max-height: 100vh;
+    overflow: auto;
+}
