@@ -80,7 +80,9 @@
 }
 
 // Fix: make scrolling in mobile menu posible
-.fixed-top {
-    max-height: 100vh;
-    overflow: auto;
+@media (max-width: 1222px) {
+    .fixed-top {
+        max-height: 100vh;
+        overflow: auto;
+    }
 }
