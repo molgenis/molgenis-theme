@@ -79,10 +79,9 @@
     -webkit-appearance: none;
 }
 
-// Fix: make scrolling in mobile menu posible
-@media (max-width: 1222px) {
-    .fixed-top {
-        max-height: 100vh;
-        overflow: auto;
-    }
+// Adding scroll to menubar
+.navbar:not(.navbar-expand-md) > .navbar-collapse.show {
+    max-height: 100vh;
+    overflow: auto;
+    padding-bottom: 4rem; // Because of the button below the fold
 }
