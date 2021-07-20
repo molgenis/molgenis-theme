@@ -44,6 +44,11 @@
         "share": false,
         "url": "https://palga-acc.gcc.rug.nl/"
     },
+    "restore": {
+        "name": "Restore",
+        "share": false,
+        "url": "https://restore.molgeniscloud.org/"
+    },
     "molgenis-blue": {
         "name": "Molgenis Default - Blue",
         "share": true,
