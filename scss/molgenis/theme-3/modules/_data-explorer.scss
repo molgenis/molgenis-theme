@@ -89,12 +89,16 @@
 
     .edit-settings {
         font-size: 2rem;
-        position: absolute;
-        top: $mg-navbar-height + ($mg-spacer * 1.75);
+        position: relative;
+
+        span {
+            cursor: pointer;
+            position: absolute;
+            top: -2.5rem;
+        }
 
         span:hover {
             color: $mg-color-primary;
-            cursor: pointer;
         }
     }
 
