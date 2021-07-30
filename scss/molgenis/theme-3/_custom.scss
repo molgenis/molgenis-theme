@@ -129,7 +129,7 @@ body > nav > header {
 }
 
 // Fix: make scrolling in mobile menu posible
-@media (max-width: 1222px) {
+@media (max-width: #{$grid-float-breakpoint}) {
     .navbar-fixed-top {
         max-height: 100vh;
         overflow: auto;
