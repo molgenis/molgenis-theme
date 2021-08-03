@@ -18,6 +18,7 @@
 
 
     // Data Explorer top well
+    /*
     #selectors {
         // Give fancy tree more container space.
         .row:nth-child(3) {
@@ -84,6 +85,38 @@
             align-items: center;
             display: flex;
             justify-content: flex-end;
+        }
+    }
+    */
+    #entity-class {
+        > .row {
+            display: flex;
+            justify-content: space-between;
+
+            &::before,
+            &::after {
+                content: unset;
+            }
+
+            .col-md-7,
+            .col-md-4,
+            .col-md-1 {
+                width: auto;
+
+                #copy-data-btn {
+                    margin-left: 1em;
+                }
+            }
+
+            .col-md-4 {
+                display: flex;
+            }
+
+            .col-md-7 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
         }
     }
 
