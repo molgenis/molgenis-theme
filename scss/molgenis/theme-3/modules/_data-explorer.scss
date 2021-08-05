@@ -18,72 +18,35 @@
 
 
     // Data Explorer top well
-    #selectors {
-        // Give fancy tree more container space.
-        .row:nth-child(3) {
-            .panel {
-                margin-bottom: 0;
+    #entity-class {
+        > .row {
+            display: flex;
+            justify-content: space-between;
 
-                .panel-body {
-                    padding: 0;
-                }
+            &::before,
+            &::after {
+                content: unset;
             }
 
-        }
-    }
+            .col-md-7,
+            .col-md-4,
+            .col-md-1 {
+                width: auto;
 
-    #entity-class {
-        #entity-package-path,
-        #delete-dropdown-container,
-        #dataset-select-container,
-        #entity-class-description,
-        #entity-class-name {
-            display: inline-block;
-            height: 50px;
-            line-height: 50px;
-            margin: 0;
-            padding: 0;
-        }
-
-
-        > .row {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            padding: 0 $mg-spacer / 2;
-
-            .col-md-7 {
-                display: flex;
-                padding: 0;
-
-                #entity-class-name {
-                    margin-right: $mg-spacer;
-                    white-space: nowrap;
-                }
-
-                #entity-class-description {
-                    font-weight: 600;
-                    margin-left: $mg-spacer;
-                    white-space: nowrap;
-
-                    span {
-                        text-overflow: ellipsis;
-                    }
+                #copy-data-btn {
+                    margin-left: 1em;
                 }
             }
 
             .col-md-4 {
-                align-items: center;
                 display: flex;
-                justify-content: flex-end;
             }
-        }
 
-        #delete-dropdown-container,
-        #dataset-select-container {
-            align-items: center;
-            display: flex;
-            justify-content: flex-end;
+            .col-md-7 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
         }
     }
 
