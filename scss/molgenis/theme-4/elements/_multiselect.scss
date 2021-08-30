@@ -25,7 +25,7 @@ $vue-multiselect-tag-font-size: $badge-font-size !default;
 $vue-multiselect-tag-font-weight: normal !default;
 $vue-multiselect-tag-icon-size: 1.7rem !default;
 $vue-multiselect-tag-icon-color: $vue-multiselect-tag-color !default;
-$vue-multiselect-tag-icon-color-hover: white !default;
+$vue-multiselect-tag-icon-color-hover: #fff !default;
 $vue-multiselect-tag-icon-bg-hover: $danger !default;
 $vue-multiselect-tag-padding-x: 0.4rem !default;
 $vue-multiselect-tag-padding-y: 0.25rem !default;
@@ -65,7 +65,7 @@ fieldset[disabled] .multiselect {
     text-align: left;
     width: 100%;
 
-    & * {
+    * {
         box-sizing: border-box;
     }
 
@@ -89,7 +89,7 @@ fieldset[disabled] .multiselect {
         border-bottom-right-radius: 0;
     }
 
-    & .multiselect__select {
+    .multiselect__select {
         transform: rotateZ(180deg);
     }
 }
@@ -292,6 +292,7 @@ fieldset[disabled] .multiselect {
     bottom: 100%;
 }
 
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
 .multiselect__content::webkit-scrollbar {
     display: none;
 }
@@ -343,7 +344,7 @@ fieldset[disabled] .multiselect {
 }
 
 .multiselect__option--selected::after {
-    color: silver;
+    color: #c0c0c0;
     content: attr(data-selected);
 }
 
@@ -543,8 +544,8 @@ fieldset[disabled] .multiselect {
         border-color: $color;
 
         @if $enable-validation-icons {
-            padding-right: $custom-select-feedback-icon-padding-right;
             background: escape-svg($icon) $custom-select-bg no-repeat $custom-select-feedback-icon-position / $custom-select-feedback-icon-size;
+            padding-right: $custom-select-feedback-icon-padding-right;
         }
 
         &:focus {
