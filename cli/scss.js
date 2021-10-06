@@ -2,7 +2,7 @@ import CleanCSS from 'clean-css'
 import fs from 'fs-extra'
 import notifier from 'node-notifier'
 import path from 'path'
-import sass from 'node-sass'
+import sass from 'sass'
 
 const cleanCSS = new CleanCSS({level: 2, returnPromise: true, sourceMap: true})
 

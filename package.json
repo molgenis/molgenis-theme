@@ -46,6 +46,7 @@
     "node-notifier": "^8.0.0",
     "node-sass": "5.0.0",
     "pino": "^6.11.1",
+    "sass": "^1.42.1",
     "semantic-release": "^17.1.2",
     "stylelint": "^13.7.1",
     "stylelint-order": "^4.1.0",
