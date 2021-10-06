@@ -91,9 +91,12 @@ tasks.scss = new Task('scss', async function(ep) {
     }
 
     const themeDir = path.join(settings.dir.themes, theme)
+    const version = process.env.TAG || process.env.npm_package_version
     await Promise.all([
-        scssRender(path.join(themeDir, 'theme-3.scss'), path.join(settings.dir.build, 'themes', `mg-${theme}-3.css`), scssOptions),
-        scssRender(path.join(themeDir, 'theme-4.scss'), path.join(settings.dir.build, 'themes', `mg-${theme}-4.css`), scssOptions)
+        scssRender(path.join(themeDir, 'theme-3.scss'), path.join(settings.dir.build, 'themes', `mg-${theme}-3.css`),
+            {...scssOptions, prependData: `/*! '${theme}' bootstrap 3 theme, part of @molgenis-ui/molgenis-theme@${version} */`}),
+        scssRender(path.join(themeDir, 'theme-4.scss'), path.join(settings.dir.build, 'themes', `mg-${theme}-4.css`),
+            {...scssOptions, prependData: `/*! '${theme}' bootstrap 4 theme, part of @molgenis-ui/molgenis-theme@${version} */`})
     ])
 })
 

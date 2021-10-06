@@ -24,7 +24,8 @@
     "proxy-services": "COMPOSE_FILE=docker/dc-proxy.yml:docker/dc-services.yml docker-compose --env-file ./.env --project-directory ./docker up",
     "proxy-services-molgenis": "COMPOSE_FILE=docker/dc-proxy.yml:docker/dc-services.yml:docker/dc-molgenis.yml docker-compose --env-file ../.env --project-directory ./docker up",
     "service": "node cli/cli.js service",
-    "test-release": "semantic-release --dry-run"
+    "test-release": "semantic-release --dry-run",
+    "postversion": "node cli/cli.js build --all --optimize"
   },
   "repository": {
     "type": "git",
@@ -55,6 +56,7 @@
     "yargs": "^15.3.1"
   },
   "dependencies": {
+    "@semantic-release/git": "^10.0.0",
     "body-parser": "^1.19.0",
     "bootstrap-sass": "^3.4.1",
     "bootstrap-scss": "4.5.2",

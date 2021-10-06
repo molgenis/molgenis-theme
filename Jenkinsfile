@@ -31,6 +31,9 @@ pipeline {
                     changelog '.*\\[skip ci\\]$'
                 }
             }
+            environment {
+                TAG = "PR-${CHANGE_ID}"
+            }
             steps {
                 container('node') {
                     sh "yarn install"
