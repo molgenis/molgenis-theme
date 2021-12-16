@@ -1,0 +1,8 @@
+@import 'molgenis/theme-3/boot';
+@import './variables';
+@import 'molgenis/theme-3/theme';
+
+
+html body table.table tbody tr:nth-child(odd) {
+    background: #f9f9f9;
+}
