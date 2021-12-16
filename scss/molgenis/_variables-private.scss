@@ -27,8 +27,8 @@ $mg-navbar-bg: $mg-color-secondary;
 $mg-navbar-link-active-bg: $mg-color-primary;
 $mg-navbar-link-active-color: $mg-color-primary-contrast;
 $mg-navbar-link-color: $mg-color-secondary-contrast;
-$mg-navbar-link-hover-bg: $mg-color-primary;
-$mg-navbar-link-hover-color: $mg-color-secondary-contrast;
+$mg-navbar-link-hover-bg: $mg-color-primary !default;
+$mg-navbar-link-hover-color: $mg-color-secondary-contrast !default;
 
 $mg-dropdown-bg: $body-bg;
 $mg-dropdown-color: $mg-color-text;
