@@ -21,7 +21,11 @@
     #entity-class {
         > .row {
             display: flex;
-            justify-content: space-between;
+            justify-content: right;
+
+            :first-child() {
+                margin-right: auto !important;
+            }
 
             &::before,
             &::after {
