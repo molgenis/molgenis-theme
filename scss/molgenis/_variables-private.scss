@@ -58,6 +58,25 @@ $dropdown-link-hover-color: $mg-color-primary-contrast;
     $dropdown-link-hover-color: $mg-color-primary;
 }
 
+@if $mg-navbar-style == 'customer' {
+    $mg-navbar-bg: #fff;
+    $mg-navbar-link-active-bg: transparent;
+    $mg-navbar-link-active-color: $mg-color-secondary;
+    $mg-navbar-link-color: $mg-color-primary;
+    $mg-navbar-link-hover-bg: transparent;
+    $mg-navbar-link-hover-color: $mg-color-secondary;
+
+    $dropdown-link-active-bg: transparent;
+    $dropdown-link-active-color: $mg-color-secondary;
+    $dropdown-link-color: $mg-color-primary;
+    $dropdown-link-hover-bg: transparent;
+    $dropdown-link-hover-color: $mg-color-secondary;
+
+    .molgenis-header-container .navbar {
+        box-shadow: 0.5px 0 2px #000;
+    }
+}
+
 // Use $mg-navbar-style to fit with the logo; this option is to override the
 // logo background. Use it as a last resort, or better, don't use it.
 $mg-logo-bg: transparent !default;
