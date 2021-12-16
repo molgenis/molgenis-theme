@@ -1,3 +1,11 @@
 @import 'molgenis/theme-4/boot';
 @import './variables';
 @import 'molgenis/theme-4/theme';
+
+html body table.table tbody tr:nth-child(even) {
+    background: #e9ecef;
+}
+
+html body table.table tbody tr:nth-child(odd) {
+    background: #f8f9fa;
+}
