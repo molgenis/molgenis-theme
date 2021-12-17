@@ -63,5 +63,9 @@
         "name": "RD-Connect",
         "share": false,
         "url": "https://molgenis97.gcc.rug.nl/"
+    },
+    "groningen-catalogue": {
+        "name": "Groningen catalogue",
+        "share": false
     }
 }
