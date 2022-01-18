@@ -59,6 +59,11 @@
         "share": true,
         "url": "https://master.dev.molgenis.org/"
     },
+    "molgenis": {
+        "name": "Molgenis Default",
+        "share": true,
+        "url": "https://master.dev.molgenis.org/"
+    },
     "rd-connect": {
         "name": "RD-Connect",
         "share": false,
