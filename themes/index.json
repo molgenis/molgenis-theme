@@ -24,6 +24,11 @@
         "share": false,
         "url": "https://molgenis23.gcc.rug.nl/"
     },
+    "eucan-connect": {
+        "name": "EUCAN Connect",
+        "share": false,
+        "url": "https://catalogue.eucanconnect.eu"
+    },
     "hfgp": {
         "name": "HFGP",
         "share": false,
